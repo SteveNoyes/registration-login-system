@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login System</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login">
+    <h1>Login</h1>
+    <form action="authenticate.php" method="post">
+      <label for="username">
+        <i class="fas fa-user"></i>
+      </label>
+      <!-- Input (text/password) — We need to name our form fields so the server can recognize them. The value of the attribute name we can declare as username, which we can use to retrieve the post variable in our authentication file to get the data, for example: $_POST['username']. -->
+      <input type="text" name="username" placeholder="Username" id="username" required>
+      <label for="password">
+        <i class="fas fa-lock"></i>
+      </label>
+      <input type="password" name="password" placeholder="Password" id="password" required>
+      <!-- Input (submit) — On form submission, the data will be sent to our authentication file for processing. -->
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
