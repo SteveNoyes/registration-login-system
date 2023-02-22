@@ -64,5 +64,5 @@ registration login system
 <!-- Login System
 https://codeshack.io/secure-login-system-php-mysql/
 
-Secure REgistration System
+Secure Registration System
 https://codeshack.io/secure-registration-system-php-mysql/ -->
