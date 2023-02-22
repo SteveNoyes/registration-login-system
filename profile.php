@@ -24,8 +24,6 @@ $stmt->fetch();
 $stmt->close();
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
 	<head>

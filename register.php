@@ -12,7 +12,6 @@ if (mysqli_connect_errno()) {
 }
 
 
-
 // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 	// Could not get the data that should have been sent.
@@ -23,7 +22,6 @@ if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['emai
 	// One or more values are empty.
 	exit('Please complete the registration form');
 }
-
 
 
 // Email Validation
@@ -40,7 +38,6 @@ if (preg_match('/^[a-zA-Z0-9]+$/', $_POST['username']) == 0) {
 if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
 	exit('Password must be between 5 and 20 characters long!');
 }
-
 
 
 // We need to check if the account with that username exists.
