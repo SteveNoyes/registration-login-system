@@ -12,20 +12,11 @@ if ( mysqli_connect_errno() ) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 
-
-
-
-
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
 	// Could not get the data that should have been sent.
 	exit('Please fill both the username and password fields!');
 }
-
-
-
-
-
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
@@ -35,14 +26,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 	// Store the result so we can check if the account exists in the database.
 	$stmt->store_result();
   
-
-
-
-
-
-
-
-
   if ($stmt->num_rows > 0) {
     $stmt->bind_result($id, $password);
     $stmt->fetch();
@@ -65,11 +48,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Incorrect username
     echo 'Incorrect username and/or password!';
   }
-
-
-
-
-
 
 	$stmt->close();
 }
