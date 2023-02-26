@@ -29,8 +29,10 @@ if (!isset($_SESSION['loggedin'])) {
 			</div>
 		</nav>
 		<div class="content">
-			<p>Hello, <?=$_SESSION['name']?>!</p>
-      
+      <div class="homeDash">
+  			<h3>Hello, <?=$_SESSION['name']?>!</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iste quidem ab optio numquam odio? Fugiat, nisi sapiente ullam nam quisquam possimus eaque tempora quasi, doloribus cupiditate vel, dolore facilis.</p>
+      </div>
 		</div>
 
 	</body>
