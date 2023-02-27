@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-family: "fira sans", Arial, sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 body {
+  box-sizing: border-box;
   background-color: #435165;
+  padding: 0;
   margin: 0;
   height: 100%;
 }
@@ -37,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 50px;
- height: 50px;
+  height: 50px;
   background-color: #3274d6;
   color: #ffffff;
 }
@@ -53,14 +54,14 @@ body {
   padding: 15px;
   margin-top: 20px;
   background-color: #3274d6;
- border: 0;
+  border: 0;
   cursor: pointer;
   font-weight: bold;
   color: #ffffff;
   transition: background-color 0.2s;
 }
 .register form input[type="submit"]:hover {
-background-color: #2868c7;
+  background-color: #2868c7;
   transition: background-color 0.2s;
 }
 
@@ -103,7 +104,7 @@ background-color: #2868c7;
 .login form input[type="submit"] {
   width: 100%;
   padding: 15px;
- margin-top: 20px;
+  margin-top: 20px;
   background-color: #3274d6;
   border: 0;
   cursor: pointer;
@@ -112,7 +113,7 @@ background-color: #2868c7;
   transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover {
-background-color: #2868c7;
+  background-color: #2868c7;
   transition: background-color 0.2s;
 }
 
@@ -158,7 +159,6 @@ body.loggedin {
 }
 .content {
 	width: 100px;
-  height: 100vh;
 	margin: 0 auto;
 }
 .content h2 {
