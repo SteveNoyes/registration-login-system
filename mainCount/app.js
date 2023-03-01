@@ -5,7 +5,6 @@ console.log(mainCount);
 // let add = document.querySelector(".add");
 // let subtract = document.querySelector(".subtract");
 
-
 // add.addEventListener("click", function () {
 //   let output = document.querySelector(".output");
 //   let result = Number(output.innerText) + 1;
@@ -56,4 +55,4 @@ qtyIncs.forEach((qtyDec) => {
       console.log('max');
     }
   })
-})
+}) 

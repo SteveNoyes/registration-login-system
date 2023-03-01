@@ -1,5 +1,16 @@
-##Overview
+## Table of contents
 
+
+- [Overview](#overview)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Featured Section](#featured-section)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+## Overview
 Since you didn't tell us about the features of the site, I'm going to invent my specification. Let's say we want to create a simple raffle website with two main features:
 
 A user system that registers and identifies each user with one admin account that has control over creating/editing/deleting the website content and its users.
@@ -18,3 +29,52 @@ The development process would roughly go like this:
 4. Create the frontends that will support the backend logic we created in steps 1, 2 and 3. The backend would serve as an API so we could potentially make multiple raffle sites with changing the frontend part only.
 
 This is just a rough outline - if I were to start work on this project, I would make sure that the specification is developed further. We would probably use a framework like Symfony to get common programming tasks out of the way, which would speed up the development process. The fun part of the project would be programming the randomness. While PHP can generate pseudo-random values by itself, we could also consider utilizing True Random Number Service for selecting the raffle winners for us.
+
+
+## My process
+
+
+### Built with
+
+
+- HTML5 markup
+- CSS  
+- JavaScript
+- PHP
+- JSON
+
+
+### Featured Section
+
+
+```html
+
+```
+
+```css
+
+```
+```javascript
+
+```
+
+
+### Useful resources
+
+
+- [Fizz Buzz](https://loremIpsumDolorSit.com) - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+- [Fizz Buzz](https://loremIpsumDolorSit.com) - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+
+## Author
+
+
+- Website - [Portfolio](https://www.stevenmnoyes.com)
+- GitHub - [SteveNoyes](https://github.com/SteveNoyes)
+
+
+## Etc
+
+
+### Boilerplate
