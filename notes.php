@@ -14,9 +14,7 @@
 
 <!-- For the above code to work, you will need to connect to your MySQL database and select the user's account. -->
 
-
 ============================================================================
-
 
 <?php session_start(); ?>
 <?php include_once('header.php') ?>
