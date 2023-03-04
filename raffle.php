@@ -189,10 +189,12 @@ if (!isset($_SESSION['loggedin'])) {
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
+
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
                     </div>
+                    
                     <small class="text-muted"><span>0</span> ticket</small>
                   </div>
                 </div>
