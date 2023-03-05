@@ -182,7 +182,8 @@ if (!isset($_SESSION['loggedin'])) {
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            
+
+            <!-- Test Prize PHP -->
             <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
@@ -196,12 +197,78 @@ if (!isset($_SESSION['loggedin'])) {
                     </div>
                     
                     <small class="text-muted"><span>0</span> ticket</small>
+                    <?php
+                      if(array_key_exists('button1', $_POST)) {
+                        button1();
+                      }
+                      else if(array_key_exists('button2', $_POST)) {
+                        button2();
+                      }
+                      function button1() {
+                        echo "This is Button1 that is selected";
+                        
+                      }
+                      function button2() {
+                        echo "This is Button2 that is selected";
+                      }
+                    ?>
+                    <form method="post">
+                      <input type="submit" name="button1" class="button" value="Button1" />
+                      <input type="submit" name="button2" class="button" value="Button2" />
+                    </form>
+                    <form action="insert.php" method="post">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
+                      <p>
+                        <label for="ticketNum">Ticket Number:</label>
+                        <input type="number" name="ticket_Num" id="ticketNum" min="1" max="14">
+                      </p>
+                      <input type="submit" value="Submit">
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
+                    </div>
+                    
+                    <small class="text-muted"><span>0</span> ticket</small>
+
+                    <form action="insert.php" method="post">
+                      <p>
+                        <label for="ticketNum">Ticket Number:</label>
+                        <input type="number" name="ticket_Num" id="ticketNum" min="1" max="14">
+                      </p>
+                      <input type="submit" value="Submit">
+                  </form>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col">
+    
+            <!-- End of Test Area -->
+
+
+
+                   
+
+
+
+
+
+   
+
+            <!-- <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
                 <div class="card-body">
@@ -215,407 +282,7 @@ if (!isset($_SESSION['loggedin'])) {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    <small class="text-muted"><span>0</span> ticket</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>  -->
 
           </div>
         </div>
@@ -624,7 +291,7 @@ if (!isset($_SESSION['loggedin'])) {
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Company Raffle</h1>
-            <p class="lead text-muted">Make your selection below and then submit down at the bottom. You have 14 tickets that can be placed with whatever prize you want.</p>
+            <p class="lead text-muted">Make your selection above and then submit. You have 14 tickets that can be placed with any prize(s) you want.</p>
             <p>
               <a href="#" class="btn btn-primary my-2">Main call to action</a>
             </p>
@@ -634,5 +301,6 @@ if (!isset($_SESSION['loggedin'])) {
     </main>
     <?php include('footer.php') ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 	</body>
 </html>
