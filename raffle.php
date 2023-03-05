@@ -184,52 +184,69 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
             <!-- Test Prize PHP -->
+
+
+            <!-- 
+              Add with javascript for on screen ticket display 
+              Then submit those variables to each database
+              And each database will generate the number of tickets on submit 
+            -->
+            <button id='add' type="button">+</button>
+            <h3><em>att<span id='val'>1</span>: </em></h3>
+
+
+
+            
             <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
-
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
-                    </div>
-                    
-                    <small class="text-muted"><span>0</span> ticket</small>
                     <?php
-                      if(array_key_exists('button1', $_POST)) {
-                        button1();
+                      $global_tickets = 0;
+                      if(array_key_exists('inc', $_POST)) {
+                        inc();
                       }
-                      else if(array_key_exists('button2', $_POST)) {
-                        button2();
+                      else if(array_key_exists('dec', $_POST)) {
+                        dec();
                       }
-                      function button1() {
-                        echo "This is Button1 that is selected";
-                        
+                      function inc() {
+                        echo "Increment is selected";
+                        global $global_tickets;
+                        $global_tickets++;
                       }
-                      function button2() {
-                        echo "This is Button2 that is selected";
+                      function dec() {
+                        echo "Decrement is selected";
+                        global $global_tickets;
+                        $global_tickets--;
                       }
                     ?>
                     <form method="post">
-                      <input type="submit" name="button1" class="button" value="Button1" />
-                      <input type="submit" name="button2" class="button" value="Button2" />
+                      <input type="submit" name="inc" class="button btn btn-sm btn-outline-secondary" value="inc" />
+                      <input type="submit" name="dec" class="button btn btn-sm btn-outline-secondary" value="dec" />
+                      <p><?php echo "The count is " . $global_tickets; ?></p>
                     </form>
-                    <form action="insert.php" method="post">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Subtract</button>
+                    <!-- <form action="insert.php" method="post">
                       <p>
                         <label for="ticketNum">Ticket Number:</label>
                         <input type="number" name="ticket_Num" id="ticketNum" min="1" max="14">
                       </p>
                       <input type="submit" value="Submit">
-                  </form>
+                    </form> -->
                   </div>
                 </div>
               </div>
             </div> 
-            <div class="col">
+
+
+
+
+
+
+
+
+            <!-- <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
                 <div class="card-body">
@@ -253,7 +270,7 @@ if (!isset($_SESSION['loggedin'])) {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
     
             <!-- End of Test Area -->
@@ -293,6 +310,7 @@ if (!isset($_SESSION['loggedin'])) {
             <h1 class="fw-light">Company Raffle</h1>
             <p class="lead text-muted">Make your selection above and then submit. You have 14 tickets that can be placed with any prize(s) you want.</p>
             <p>
+              <!-- replace with button pointing toward 'databases.php' foreach prize -->
               <a href="#" class="btn btn-primary my-2">Main call to action</a>
             </p>
           </div>
