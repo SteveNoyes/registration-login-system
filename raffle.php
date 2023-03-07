@@ -191,11 +191,6 @@ if (!isset($_SESSION['loggedin'])) {
               Then submit those variables to each database
               And each database will generate the number of tickets on submit 
             -->
-            <button id='add' type="button">+</button>
-            <h3><em>att<span id='val'>1</span>: </em></h3>
-
-
-
             
             <div class="col">
               <div class="card shadow-sm">
