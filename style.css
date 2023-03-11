@@ -28,6 +28,7 @@ body {
 }
 p {
   font-family: 'Open Sans', sans-serif, monospace;
+  color: var(--black);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nunito', sans-serif, monospace;
@@ -173,10 +174,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 2px 8px 0 0;
 }
 .navtop div a:hover {
-	color: #eaebed;
+	color: var(--bg);
 }
 body.loggedin {
-	background-color: #f3f4f7;
+	background-color: var(--bg);
 }
 .content {
 	width: 90%;
@@ -186,21 +187,20 @@ body.loggedin {
 	margin: 0;
 	padding: 25px 0;
 	font-size: 22px;
-	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
+	color: var(--dark-blue);
 }
 .content > p, .content > div {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
 	padding: 25px;
-	background-color: #fff;
+	background-color: var(--white);
 }
 .content > p table td, .content > div table td {
 	padding: 5px;
 }
 .content > p table td:first-child, .content > div table td:first-child {
 	font-weight: bold;
-	color: #4a536e;
+	color: var(--purple);
 	padding-right: 15px;
 }
 .content > div p {

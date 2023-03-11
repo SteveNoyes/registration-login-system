@@ -5,10 +5,10 @@
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
     </a>
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Profile</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Raffle</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Logout</a></li>
+      <li class="nav-item"><a href="home.php" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="profile.php" class="nav-link px-2 text-muted">Profile</a></li>
+      <li class="nav-item"><a href="raffle.php" class="nav-link px-2 text-muted">Raffle</a></li>
+      <li class="nav-item"><a href="logout.php" class="nav-link px-2 text-muted">Logout</a></li>
     </ul>
   </footer>
 </div>

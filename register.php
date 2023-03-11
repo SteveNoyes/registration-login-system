@@ -1,6 +1,5 @@
 <!-- Restrict registration based on email. If they do not have a company email that can be verified they cannot register -->
 
-
 <?php
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
