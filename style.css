@@ -1,6 +1,21 @@
+/* Colors */
+:root {
+  --dark-blue: #5a9bc9;
+  --lite-blue: #87c1e9;
+  --purple: #5d4586;
+  --green: #acce5a;
+  --teal: #78c6cd; 
+}
+
+
+/* Font Family */
+/* font-family: 'Nunito', sans-serif, monospace; */
+/* font-family: 'Open Sans', sans-serif, monospace; */
+
+
 * {
   box-sizing: border-box;
-  font-family: "fira sans", Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif, monospace;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,7 +27,12 @@ body {
   margin: 0;
   height: 100%;
 }
-
+p {
+  font-family: 'Open Sans', sans-serif, monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif, monospace;
+}
 /* Register Page */
 .register {
   width: 400px;
