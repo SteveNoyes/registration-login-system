@@ -191,7 +191,7 @@ if (!isset($_SESSION['loggedin'])) {
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div id="row0" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
@@ -199,14 +199,10 @@ if (!isset($_SESSION['loggedin'])) {
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <form action="ticketCount.php" method="post">
-                      <label for="username">
-                        <i class="fas fa-user"></i>
-                      </label>
-                      <input type="button" name="inc" placeholder="add" onclick="fizzbuzz()" id="inc">
-                      <div class="ticCount">
-                        <p></p>
-                      </div>
-                      <input type="button" name="dec" placeholder="substract" onclick="hello()" id="dec">
+                      <i class="fas fa-user"></i>
+                      <p class="selectBtn" onclick="fizzbuzz()" id="inc">+</p>
+                      <div id="counter">0</div>
+                      <p class="selectBtn" onclick="hello()" id="dec">-</p>
                       <input type="submit" value="Submit Tickets">
                     </form>
                   </div>
