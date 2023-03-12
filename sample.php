@@ -167,7 +167,6 @@ if (!isset($_SESSION['loggedin'])) {
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
         }
-        /* Footer End */
     </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	</head>
@@ -188,6 +187,8 @@ if (!isset($_SESSION['loggedin'])) {
           </div>
         </div>
       </section>
+
+
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -197,29 +198,16 @@ if (!isset($_SESSION['loggedin'])) {
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <?php
-                      $global_tickets = 0;
-                      if(array_key_exists('inc', $_POST)) {
-                        inc();
-                      }
-                      else if(array_key_exists('dec', $_POST)) {
-                        dec();
-                      }
-                      function inc() {
-                        echo "Increment is selected";
-                        global $global_tickets;
-                        $global_tickets++;
-                      }
-                      function dec() {
-                        echo "Decrement is selected";
-                        global $global_tickets;
-                        $global_tickets--;
-                      }
-                    ?>
-                    <form method="post">
-                      <input type="submit" name="inc" class="button btn btn-sm btn-outline-secondary" value="inc" />
-                      <input type="submit" name="dec" class="button btn btn-sm btn-outline-secondary" value="dec" />
-                      <p><?php echo "The count is " . $global_tickets; ?></p>
+                    <form action="ticketCount.php" method="post">
+                      <label for="username">
+                        <i class="fas fa-user"></i>
+                      </label>
+                      <input type="button" name="inc" placeholder="add" onclick="fizzbuzz()" id="inc">
+                      <div class="ticCount">
+                        <p></p>
+                      </div>
+                      <input type="button" name="dec" placeholder="substract" onclick="hello()" id="dec">
+                      <input type="submit" value="Submit Tickets">
                     </form>
                   </div>
                 </div>
@@ -228,6 +216,8 @@ if (!isset($_SESSION['loggedin'])) {
           </div>
         </div>
       </div>
+
+
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
