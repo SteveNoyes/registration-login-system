@@ -1,31 +1,47 @@
+// Global Counter
+
 let counter = 0;
 
+// Local Counters for Each Prize
 
-function fizzbuzz() {
-  // console.log("increment");
+let localCounter0 = 0;
+let localCounter1 = 0;
+
+// First Prize
+
+function inc0() {
   if(counter >= 0 && counter < 14) {
     counter++;
+    localCounter0++;
   }
-  console.log(counter);
-  // document.querySelector('counter') = counter;
+  document.getElementById('counter0').innerHTML = localCounter0;
 }
 
-function hello() {
-  // console.log("decrement");
-  if(counter > 0 && counter < 14) {
+function dec0() {
+  if(counter > 0 && counter <= 14) {
     counter--;
+    localCounter0--;
   }
-  console.log(counter);
-  // document.querySelector('counter') = counter;
+  document.getElementById('counter0').innerHTML = localCounter0;
 }
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   document.getElementById('add').addEventListener('click', function() {
-//     document.getElementById('val').innerHTML++;
-//   });
-// });
 
-// function inc() {
-//   document.querySelector(body).style.backgroundColor = "red";
-// }
+
+// Second Prize
+
+function inc1() {
+  if(counter >= 0 && counter < 14) {
+    counter++;
+    localCounter1++;
+  }
+  document.getElementById('counter1').innerHTML = localCounter1;
+}
+
+function dec1() {
+  if(counter > 0 && counter <= 14) {
+    counter--;
+    localCounter1--;
+  }
+  document.getElementById('counter1').innerHTML = localCounter1;
+}

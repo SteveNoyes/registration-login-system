@@ -23,7 +23,6 @@ if (!isset($_SESSION['loggedin'])) {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<title>Home Page</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="style.css" rel="stylesheet" type="text/css">
     <style>
       /* Nav Start */
       .bd-placeholder-img {
@@ -167,8 +166,22 @@ if (!isset($_SESSION['loggedin'])) {
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
         }
+        .selectBtn {
+          padding: 1rem;
+          background-color: lightgray;
+          border-radius: 8px;
+          box-shadow: 1px 4px 10px lightgray;
+          transition: all .2s ease-in-out; 
+        }
+        .selectBtn:hover {
+          cursor: pointer;
+          transform: scale(1.1); 
+
+        }
+        
     </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body class="loggedin">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -189,40 +202,52 @@ if (!isset($_SESSION['loggedin'])) {
       </section>
 
 
+
+
       <div class="album py-5 bg-light">
         <div class="container">
           <div id="row0" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
+
+          <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <form action="ticketCount.php" method="post">
-                      <i class="fas fa-user"></i>
-                      <p class="selectBtn" onclick="fizzbuzz()" id="inc">+</p>
-                      <div id="counter">0</div>
-                      <p class="selectBtn" onclick="hello()" id="dec">-</p>
-                      <input type="submit" value="Submit Tickets">
-                    </form>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                    <div id="counter0">0</div>
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
                   </div>
                 </div>
               </div>
             </div> 
+
+            <!-- <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="selectBtn" onclick="inc1()" id="inc">+</p>
+                    <div id="counter1">0</div>
+                    <p class="selectBtn" onclick="dec1()" id="dec">-</p>
+                  </div>
+                </div>
+              </div>
+            </div>  -->
+
           </div>
         </div>
       </div>
-
 
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Company Raffle</h1>
             <p class="lead text-muted">Make your selection above and then submit. You have 14 tickets that can be placed with any prize(s) you want.</p>
-            <p>
-              <!-- replace with button pointing toward 'databases.php' foreach prize -->
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            </p>
+            <form action="ticketSubmit.php" method="post">
+              <input type="submit" value="Submit Tickets">
+            </form>
           </div>
         </div>
       </section>
