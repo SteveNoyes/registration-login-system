@@ -67,6 +67,8 @@ https://codeshack.io/secure-login-system-php-mysql/
 Secure Registration System
 https://codeshack.io/secure-registration-system-php-mysql/ -->
 
+<!-- https://www.geeksforgeeks.org/how-to-insert-form-data-into-database-using-php/ -->
+
 ~400 Users ( test limit 800)
 
 How to register users:

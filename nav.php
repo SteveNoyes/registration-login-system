@@ -1,6 +1,6 @@
 <nav class="navtop">
   <div>
-    <h1><a href="home.php">Website Title</a></h1>
+    <h1><a href="home.php">Company Raffle</a></h1>
     <a href="sample.php"><i class="fa-solid fa-droplet"></i>Sample</a>
     <a href="raffle.php"><i class="fa-solid fa-ticket"></i>Raffle</a>
     <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>

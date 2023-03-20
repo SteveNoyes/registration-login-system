@@ -209,19 +209,20 @@ if (!isset($_SESSION['loggedin'])) {
           <div id="row0" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
           <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://via.placeholder.com/225" alt="">
-                <div class="card-body">
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
                     <div id="counter0">0</div>
-                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
-                  </div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
                 </div>
               </div>
-            </div> 
-
+            </div>
+          </div> 
+           
             <!-- <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
@@ -244,7 +245,7 @@ if (!isset($_SESSION['loggedin'])) {
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Company Raffle</h1>
-            <p class="lead text-muted">Make your selection above and then submit. You have 14 tickets that can be placed with any prize(s) you want.</p>
+            <p class="lead text-muted">Submit your selection below.</p>
             <form action="ticketSubmit.php" method="post">
               <input type="submit" value="Submit Tickets">
             </form>

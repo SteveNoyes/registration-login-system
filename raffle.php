@@ -200,49 +200,384 @@ if (!isset($_SESSION['loggedin'])) {
               Then submit those variables to each database
               And each database will generate the number of tickets on submit 
             -->
-            
             <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <?php
-                      $global_tickets = 0;
-                      if(array_key_exists('inc', $_POST)) {
-                        inc();
-                      }
-                      else if(array_key_exists('dec', $_POST)) {
-                        dec();
-                      }
-                      function inc() {
-                        echo "Increment is selected";
-                        global $global_tickets;
-                        $global_tickets++;
-                      }
-                      function dec() {
-                        echo "Decrement is selected";
-                        global $global_tickets;
-                        $global_tickets--;
-                      }
-                    ?>
-                    <form method="post">
-                      <input type="submit" name="inc" class="button btn btn-sm btn-outline-secondary" value="inc" />
-                      <input type="submit" name="dec" class="button btn btn-sm btn-outline-secondary" value="dec" />
-                      <p><?php echo "The count is " . $global_tickets; ?></p>
-                    </form>
-                    <!-- <form action="insert.php" method="post">
-                      <p>
-                        <label for="ticketNum">Ticket Number:</label>
-                        <input type="number" name="ticket_Num" id="ticketNum" min="1" max="14">
-                      </p>
-                      <input type="submit" value="Submit">
-                    </form> -->
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                      <div id="counter0">0</div>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
                   </div>
                 </div>
               </div>
             </div> 
-
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                      <div id="counter0">0</div>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                      <div id="counter0">0</div>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                      <div id="counter0">0</div>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://via.placeholder.com/225" alt="">
+              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+              <div class="card-body">
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+                    <div id="counter0">0</div>
+                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
             <!-- <div class="col">
@@ -300,10 +635,10 @@ if (!isset($_SESSION['loggedin'])) {
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Company Raffle</h1>
-            <p class="lead text-muted">Make your selection above and then submit. You have 14 tickets that can be placed with any prize(s) you want.</p>
+            <p class="lead text-muted">Submit your selection below.</p>
             <p>
               <!-- replace with button pointing toward 'databases.php' foreach prize -->
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-primary my-2">Submit</a>
             </p>
           </div>
         </div>

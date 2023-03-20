@@ -26,8 +26,6 @@ function dec0() {
 }
 
 
-
-
 // Second Prize
 
 function inc1() {

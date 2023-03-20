@@ -37,8 +37,14 @@ if (!isset($_SESSION['loggedin'])) {
     </svg>
     <?php include('nav.php') ?>
 		<div class="content">
-      <div class="homeDash">
+      <div class="homeDash pt-5 pb-5">
   			<h3>Hello, <?=$_SESSION['name']?>!</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iste quidem ab optio numquam odio? Fugiat, nisi sapiente ullam nam quisquam possimus eaque tempora quasi, doloribus cupiditate vel, dolore facilis.</p>
+      </div>
+      <div class="homeDash pt-5 pb-5">
+  			<h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iste quidem ab optio numquam odio? Fugiat, nisi sapiente ullam nam quisquam possimus eaque tempora quasi, doloribus cupiditate vel, dolore facilis.</p>
+  			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sapiente minima tenetur error pariatur cupiditate. Tempora natus nesciunt id officia inventore laboriosam, aspernatur dolore molestiae voluptatem impedit velit est voluptates ullam cum minus quae. Voluptas libero ullam totam error ipsum.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iste quidem ab optio numquam odio? Fugiat, nisi sapiente ullam nam quisquam possimus eaque tempora quasi, doloribus cupiditate vel, dolore facilis.</p>
       </div>
 		</div>
