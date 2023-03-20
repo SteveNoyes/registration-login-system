@@ -176,9 +176,10 @@ if (!isset($_SESSION['loggedin'])) {
         .selectBtn:hover {
           cursor: pointer;
           transform: scale(1.1); 
-
         }
-        
+        /* input {
+          display: none;
+        }         */
     </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css">
@@ -205,49 +206,78 @@ if (!isset($_SESSION['loggedin'])) {
 
 
       <div class="album py-5 bg-light">
+
+        <form action="ticketSubmit.php" method="post">
+          
         <div class="container">
           <div id="row0" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="https://via.placeholder.com/225" alt="">
-              <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
-              <div class="card-body">
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="selectBtn" onclick="dec0()" id="dec">-</p>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="selectBtn" onclick="dec0()" id="dec">-</p>
                     <div id="counter0">0</div>
-                  <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                    <p class="selectBtn" onclick="inc0()" id="inc">+</p>
+                    <input type="number" id="prizeOne" value="0">
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> 
+            </div> 
+
+
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://via.placeholder.com/225" alt="">
+                <!-- <img src="./images/sq.jpg" width="225" alt=""> -->
+                <div class="card-body">
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>Main Counter: <span id="mainCount">0</span></p>
+                    <p>Prize One Local Counter: <span id="p1local">0</span></p>
+                    <p>Prize Two Local Counter: <span id="p2local">0</span></p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
            
-            <!-- <div class="col">
+            <div class="col">
               <div class="card shadow-sm">
                 <img src="https://via.placeholder.com/225" alt="">
                 <div class="card-body">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis accusantium maxime reiciendis aspernatur nihil ipsum ipsa.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <p class="selectBtn" onclick="inc1()" id="inc">+</p>
-                    <div id="counter1">0</div>
                     <p class="selectBtn" onclick="dec1()" id="dec">-</p>
+                    <div id="counter2">0</div>
+                    <p class="selectBtn" onclick="inc1()" id="inc">+</p>
+                    <input type="number" id="prizeTwo" value="0">
                   </div>
                 </div>
               </div>
-            </div>  -->
+            </div> 
 
           </div>
         </div>
+
       </div>
+
+
+
+
+
 
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Company Raffle</h1>
             <p class="lead text-muted">Submit your selection below.</p>
-            <form action="ticketSubmit.php" method="post">
-              <input type="submit" value="Submit Tickets">
+            
+              <input style="display: inline;" type="submit" value="Submit Tickets">
             </form>
           </div>
         </div>

@@ -39,9 +39,14 @@
   mysqli_close($conn);
 
 
+// log into one server
+// use different table for each prize 
+// on submit take number and generate ticket id(s)
+// insert ticket id(s) into tables
 
-
-
+// For choosing winner 
+// Create admin account
+// Admin can select a prize table and randomly select a winnder from it
 
 
 

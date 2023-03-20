@@ -69,6 +69,10 @@ https://codeshack.io/secure-registration-system-php-mysql/ -->
 
 <!-- https://www.geeksforgeeks.org/how-to-insert-form-data-into-database-using-php/ -->
 
+<!-- https://gomakethings.com/how-to-get-the-value-of-an-input-as-a-number-with-vanilla-javascript/ -->
+
+<!-- https://stackoverflow.com/questions/39250550/inject-text-into-html-form-field-with-javascript -->
+
 ~400 Users ( test limit 800)
 
 How to register users:
