@@ -119,3 +119,5 @@ Design Notes:
 
   Most users, if not all, will be using this from their phones. Mobile needs to be the default with moderate tablet or laptop adjustments. 
   So, design needs to be simple. Sign in, select prizes, submit, view results. Each Prize Card is a picture of the prize, a description and a ticket selection feature.
+
+  Currently updating off main. Need to merge on return.
